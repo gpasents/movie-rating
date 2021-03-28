@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    position:fixed;
+    left: 20%;
+    margin-top: 200px;
+
+    
+    
+    
+  }
+  .image {
+    flex-direction: row;
+    display: flex;
+    margin-right: 200px;
+    
+  }
+  
+  .stats {
+    flex-direction: column;
+    display: flex;
+    
+
+  }
+  .ratings{
+    
+    flex-direction: row;
+    display: flex;
+  
+  }
+
+  
+  
+  

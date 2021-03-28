@@ -1,35 +1,8 @@
-
 <div class="container">
-    <div class="one">
-       <input type="text" class="searchTerm" placeholder="What are you looking for?" [(ngModel)]="value" (keyup.enter)="onClick()">
-       <button type="submit" class="searchButton" (click) = "onClick()">
-         Go
-      </button>
-    </div>
-    
-    
-    <div class="two">
-      <div class = "image">
-       
-        <img src={{mydata.Poster}} >
-        
-
-      </div>
-      <div class = "stats">
-        <p>{{mydata.Title}}</p>
-        <p>{{mydata.Ratings[1].Source}}</p>
-        <p>{{mydata.Ratings[1].Value}}</p>
-       
-        <p>{{mydata.Ratings[0].Source}}</p>
-        <p>{{mydata.Ratings[0].Value}}</p>
-
-      </div>
-   
-   </div>
-
- 
- 
- 
-   </div>
-
-
+  <div class="search_bar">
+    <input type="text" class="searchTerm" placeholder="What are you looking for?" [(ngModel)]="value">
+    <button routerLink="/results/{{value}}" type="submit" class="searchButton" >
+      Go
+    </button>
+  </div>
+</div>

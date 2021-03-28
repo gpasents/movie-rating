@@ -12,23 +12,13 @@ import { IRatings } from '../ratings';
 })
 export class SearchBarComponent implements OnInit {
 
-  constructor( private http: HttpClient) { }
+  constructor( ) { }
 
   value : string
-  mydata :IMovie
   ngOnInit() {
-    
+
 }
 
-onClick(){
-  this.http.get<any>("http://www.omdbapi.com/?t=" + this.value + "&apikey=7aa8f852")
-  .subscribe(
-    data => {
-      this.mydata = data;
-    } 
-
-  )
-}
 
 
 }
