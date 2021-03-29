@@ -1,7 +1,7 @@
 <div class="wrap">
   <div class="search">
-    <input type="text" class="searchTerm" [(ngModel)]= "value">
-    <button type="submit" class="searchButton" routerLink = "/results/{{value}}">
+    <input type="text" class="searchTerm" [(ngModel)]= "value" placeholder="Movie Title..." (keyup.enter) = "changeView()">
+    <button type="submit" class="searchButton" (click) = "changeView()">
       Go
     </button>
   </div>
