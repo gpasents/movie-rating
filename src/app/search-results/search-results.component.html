@@ -1,37 +1,48 @@
 <div class="container">
-    <div class="image">
-      <div style="background: #0980cc;">
-        <img src={{mydata.Poster}}>
-      </div>
+  <div class="image">
+    <div style="background: #0980cc;">
+      <img src={{mydata.Poster}}>
     </div>
-    <div class="stats">
-      <div style="background: #09cc69;">
-        <h1>{{mydata.Title}}</h1>
-        <h4> {{mydata.Year}}</h4>
-        <h4> {{mydata.Genre}}</h4>
-        <p>{{mydata.Plot}}</p>
-      </div>
-      <div class="ratings" style="background: #cc092f;">
-        <div> 
-          <h4>{{mydata.Ratings[0].Source}}</h4>
-          <h5>{{mydata.Ratings[0].Value}}</h5>
-        </div>
-        <div>
-          <h4>{{mydata.Ratings[1].Source}}</h4>
-          <h5>{{mydata.Ratings[1].Value}}</h5>
-        </div>
-        <div>
-          <h4>{{mydata.Ratings[2].Source}}</h4>
-          <h5>{{mydata.Ratings[2].Value}}</h5>
-        </div>
-
-
-
-
-
-
-      </div>
-    </div>
-
-
   </div>
+  <div class="stats">
+    <div class="basic" style="background: #09cc69;">
+      <h1>{{mydata.Title}}</h1>
+      <h4> {{mydata.Year}}</h4>
+      <h4> {{mydata.Genre}}</h4>
+      <p>{{mydata.Plot}}</p>
+    </div>
+    <div class="ratings" style="background: #cc092f;">
+      <div>
+        <h4>{{mydata.Ratings[0].Source}}</h4>
+        <h5>{{mydata.Ratings[0].Value}}</h5>
+      </div>
+      <div>
+        <h4>{{mydata.Ratings[1].Source}}</h4>
+        <h5>{{mydata.Ratings[1].Value}}</h5>
+      </div>
+      <div>
+        <h4>{{mydata.Ratings[2].Source}}</h4>
+        <h5>{{mydata.Ratings[2].Value}}</h5>
+      </div>
+
+    </div>
+    <div class="people" style="background: #9e0391;">
+      <div>
+        <h4>{{mydata.Ratings[0].Source}}</h4>
+        <h5>{{mydata.Ratings[0].Value}}</h5>
+      </div>
+      <div>
+        <h4>{{mydata.Ratings[1].Source}}</h4>
+        <h5>{{mydata.Ratings[1].Value}}</h5>
+      </div>
+      <div>
+        <h4>{{mydata.Ratings[2].Source}}</h4>
+        <h5>{{mydata.Ratings[2].Value}}</h5>
+      </div>
+
+
+    </div>
+  </div>
+
+
+</div>

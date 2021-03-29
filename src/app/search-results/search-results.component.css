@@ -1,11 +1,10 @@
 .container {
     display: flex;
     position:fixed;
+    overflow: hidden;
     left: 20%;
     margin-top: 200px;
 
-    
-    
     
   }
   .image {
