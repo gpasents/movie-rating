@@ -15,7 +15,7 @@ export class SearchResultsComponent implements OnInit {
   value:string;
   mydata :IMovie
   ngOnInit(): void {
-    this.http.get<any>("http://www.omdbapi.com/?t="+ this.router.snapshot.params.value +"&apikey=7aa8f852")
+    this.http.get<any>("https://www.omdbapi.com/?t="+ this.router.snapshot.params.value +"&apikey=7aa8f852")
     .subscribe(
       data => {
         this.mydata = data;
